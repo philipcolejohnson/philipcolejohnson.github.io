@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About Long Haul
+title: About Philip Cole Johnson
 ---
 
 <div class="post">
