@@ -1,7 +1,7 @@
 title: Philip Cole Johnson
-description: Developer
+description: Developer, Writer
 
-url: http://philipj.me
+url: http://www.philipj.me
 baseurl: ""
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
@@ -22,6 +22,6 @@ navigation:
 social:
    github: philipcolejohnson
    facebook: philipcolejohnson
-   email: phil@philip.me
+   email: hi@philipj.me
 
-google_analytics: "UA-58263416-1"
+google_analytics: "GTM-K49223"
