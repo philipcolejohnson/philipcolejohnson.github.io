@@ -10,7 +10,7 @@ date:   2016-06-13
 
 Regardless of whether this claim is [actually true](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/), it sounds like the perfect opportunity for a coding exercise. In fact, I found one at [RubyQuiz](http://rubyquiz.com/quiz76.html) called “Text Munger.”
 
-Our task is to take a string of perfect text, carefully corrected by a hard-working and underpaid proofreader, and garble it (though keeping the first and last letters and punctuation in place) so that Facebook posters can thoughtlessly spread misinformation. Because it is the 400th anniversary of Shakespeare’s death, I chose this famous soliloquy:
+Our task is to take a string of perfect text, painstakingly corrected by a hard-working and underpaid proofreader, and garble it (though keeping the first and last letters and punctuation in place) so that Facebook posters can thoughtlessly spread misinformation. Because it is the 400th anniversary of Shakespeare’s death, I chose this famous soliloquy:
 
 <q>To be, or not to be: that is the question:<br>
 Whether ’tis nobler in the mind to suffer<br>
@@ -25,7 +25,7 @@ To sleep: perchance to dream: ay, there’s the rub</q>
 
 Lovely. This passage also has the additional challenges of new-line characters and punctuation at the beginning of words, a welcome complexity.
 
-My first idea was to split the text and place all the words in an array (and, indeed, this was the same approach taken by almost all my classmates at [Viking Code School](https://www.vikingcodeschool.com/) when I posed the problem). This was easy enough to accomplish with <code>text.split</code>. However, because of the punctuation at the beginning and end of words, I had to determine the position of the first and last letters of each word in the array, and only then scramble the middle with <code>#sort_by {rand}</code>. My initial attempt at the code worked, but was quite complex.
+My first idea was to split the text and place all the words in an array (and, indeed, this was the same approach taken by nearly all my classmates at [Viking Code School](https://www.vikingcodeschool.com/) when I posed the problem). This was easy enough to accomplish with <code>text.split</code>. However, because of the punctuation at the beginning and end of words, I had to determine the position of the first and last letters of each word in the array, and only then scramble the middle with <code>#sort_by {rand}</code>. My initial attempt at the code worked, but was quite complex.
 
 {% highlight ruby %}
 def scrambler(text)
@@ -97,7 +97,7 @@ def scrambler(text)
 end
 {% endhighlight %}
 
-So this was my final version. However, on the RubyQuiz page, someone else had posted an even shorter answer that uses a very complex regular expression.
+So this was my final version. However, on the RubyQuiz page, someone posted an even more compact solution that uses a complex regular expression.
 
 {% highlight ruby %}
 text.gsub(/\B((?![\d_])\w{2,})\B/) do |w|
@@ -105,7 +105,7 @@ text.gsub(/\B((?![\d_])\w{2,})\B/) do |w|
   end
 {% endhighlight %}
 
-This was beyond my current skill level with regular expressions, but of course I was impressed. It could be shortened into a single line!
+This was beyond my current skill level, so naturally I was impressed. It could be shortened into a single line!
 
 And, of course, the final result, which unfortunately proves to be almost as readable as the claims suggest, though the answer to the bard’s question proves no simpler:
 
