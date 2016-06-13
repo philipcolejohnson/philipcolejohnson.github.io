@@ -10,7 +10,7 @@ date:   2016-06-13
 
 Regardless of whether this claim is [actually true](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/), it sounds like the perfect opportunity for a coding exercise. In fact, I found one at [RubyQuiz](http://rubyquiz.com/quiz76.html) called “Text Munger.”
 
-Our task is to take a string of perfect text, carefully corrected by a hard-working and underpaid copyeditor, and garble it (though keeping the first and last letters and punctuation in place) so that Facebook posters can thoughtlessly spread misinformation. Because it is the 400th anniversary of Shakespeare’s death, I chose this famous soliloquy:
+Our task is to take a string of perfect text, carefully corrected by a hard-working and underpaid proofreader, and garble it (though keeping the first and last letters and punctuation in place) so that Facebook posters can thoughtlessly spread misinformation. Because it is the 400th anniversary of Shakespeare’s death, I chose this famous soliloquy:
 
 <q>To be, or not to be: that is the question:<br>
 Whether ’tis nobler in the mind to suffer<br>
@@ -23,7 +23,7 @@ That flesh is heir to, ’tis a consummation<br>
 Devoutly to be wish’d. To die, to sleep;<br>
 To sleep: perchance to dream: ay, there’s the rub</q>
 
-This passage also has the additional challenges of new-line characters and punctuation at the beginning of words, a welcome complexity.
+Lovely. This passage also has the additional challenges of new-line characters and punctuation at the beginning of words, a welcome complexity.
 
 My first idea was to split the text and place all the words in an array (and, indeed, this was the same approach taken by almost all my classmates at [Viking Code School](https://www.vikingcodeschool.com/) when I posed the problem). This was easy enough to accomplish with <code>text.split</code>. However, because of the punctuation at the beginning and end of words, I had to determine the position of the first and last letters of each word in the array, and only then scramble the middle with <code>#sort_by {rand}</code>. My initial attempt at the code worked, but was quite complex.
 
@@ -65,7 +65,9 @@ def scrambler(text)
 end
 {% endhighlight %}
 
-Yikes. There had to be a better strategy. My next idea was to split the text differently, and by using the regular expression <code>/\b/</code>, which splits on word boundries, I shortened my function significantly.
+Yikes. There had to be a better strategy. 
+
+My next idea was to splice the text differently, and by using the regular expression <code>/\b/</code>, which splits on word boundries, I shortened my function significantly.
 
 {% highlight ruby %}
 def scrambler(text)
@@ -84,7 +86,7 @@ def scrambler(text)
 end
 {% endhighlight %}
 
-However, this still could be improved. After some thought, I realized there was no need to actually make an array. Because I was replacing text in a string, a simpler approach was to simply search the string for letters and substitute in the scrambled text. For this I used <code>#gsub</code>. We only need to find words longer than four letters, since anything shorter would remain unchanged. Thus, my new search pattern: <code>/\w{4,}/</code>. Now I could easily scramble the middle letters, as I would no longer be dealing with punctuation.
+However, this still could be improved. After some thought, I realized there was no need to actually make an array. Because I was replacing text in a string, a better approach was to simply search the string for letters and substitute in the scrambled text. For this I used <code>#gsub</code>. I only needed to find words longer than four letters, since anything shorter would remain unchanged. Thus, my new search pattern: <code>/\w{4,}/</code>. Now I could easily scramble the middle letters, as I would no longer be dealing with punctuation.
 
 {% highlight ruby %}
 def scrambler(text)
@@ -103,7 +105,7 @@ text.gsub(/\B((?![\d_])\w{2,})\B/) do |w|
   end
 {% endhighlight %}
 
-This was beyond my skill level with regular expressions, but of course I was impressed. It could be shortened into a single line!
+This was beyond my current skill level with regular expressions, but of course I was impressed. It could be shortened into a single line!
 
 And, of course, the final result, which unfortunately proves to be almost as readable as the claims suggest, though the answer to the bard’s question proves no simpler:
 
