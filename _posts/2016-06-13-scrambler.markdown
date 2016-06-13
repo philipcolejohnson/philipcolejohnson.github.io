@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Scrambled Letters
+title:  Scrambled Letters Ruby Challenge
 date:   2016-06-13
 ---
 
@@ -8,7 +8,7 @@ date:   2016-06-13
 
 <q>Aoccdrnig to a rscheearch at Cmabrigde Uinervtisy, it deosn’t mttaer in waht oredr the ltteers in a wrod are, the olny iprmoatnt tihng is taht the frist and lsat ltteers be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.</q>
 
-Regardless of whether this claim is [actually true](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/), it sounds like the perfect opportunity for a coding exercise. In fact, I found one at [RubyQuiz](http://rubyquiz.com/quiz76.html).
+Regardless of whether this claim is [actually true](http://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/), it sounds like the perfect opportunity for a coding exercise. In fact, I found one at [RubyQuiz](http://rubyquiz.com/quiz76.html) called “Text Munger.”
 
 Our task is to take a string of perfect text, carefully corrected by a hard-working and underpaid copyeditor, and garble it (though keeping the first and last letters and punctuation in place) so that Facebook posters can thoughtlessly spread misinformation. Because it is the 400th anniversary of Shakespeare’s death, I chose this famous soliloquy:
 
