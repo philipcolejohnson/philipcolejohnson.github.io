@@ -1,5 +1,3 @@
-Hey, it's my website. Check it out!
+####[philipj.me](http://philipj.me)
 
-####[View Site](http://philipj.me)
-
-Copyright Philip Johnson
+© Philip Johnson 2016
