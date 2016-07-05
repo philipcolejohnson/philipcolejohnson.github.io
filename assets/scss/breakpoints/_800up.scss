@@ -231,3 +231,25 @@ CONTACT PAGE STYLING
 		@include span(6 of 12 last);
 	}
 }
+
+/***************
+ABOUT PAGE STYLING
+***************/
+
+.aboutRow {
+
+}
+
+.aboutLeft {
+	@include span(6 of 12);
+}
+
+.aboutRight {
+	img {
+		@include span(6 of 12 last);
+	}
+}
+
+#aboutQuote {
+	font-size: 1.2em;
+}
