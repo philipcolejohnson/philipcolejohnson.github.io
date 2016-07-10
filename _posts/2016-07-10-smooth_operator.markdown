@@ -62,7 +62,7 @@ Solution array:<br>
 Guess array:<br>
 [ (2)blue   (3)yellow (4)yellow ]<br>
 
-Now I could count the number of items in the guess array and subtract the number in the solution array to determine how many were in the wrong spot.
+Now I could count the differences between these two arrays to determine how many were in the wrong spot.
 
 When I tried to implement the first step (eliminating items that were the same) of the procedure, however, it turned out to be less straightforward than I anticipated. I worked with one of our instructors on the problem, and we eventually came up with this:
 
@@ -109,4 +109,4 @@ array.transpose
 
 {% endhighlight %}
 
-And that leaves me with a neat little method that works as a smooth operator to remove like elements in two arrays.
+And that leaves me with a smooth little operator to remove like elements in two arrays.
