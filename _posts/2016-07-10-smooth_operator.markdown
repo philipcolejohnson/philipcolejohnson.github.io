@@ -62,7 +62,9 @@ Solution array:<br>
 Guess array:<br>
 [ (2)blue   (3)yellow (4)yellow ]<br>
 
-When I tried to implement procedure, it turned out to be harder than I anticipated to do well. I worked with one of our instructors on the problem, and we eventually came up with this:
+Now I could count the number of items in the guess array and subtract the number in the solution array to determine how many were in the wrong spot.
+
+When I tried to implement the first step (eliminating items that were the same) of the procedure, however, it turned out to be less straightforward than I anticipated. I worked with one of our instructors on the problem, and we eventually came up with this:
 
 {% highlight ruby %}
 def eliminate_duplicates(array_one, array_two)
@@ -86,7 +88,7 @@ short_array_two # => [3, 5, 6, 11]
 
 As you can see, the places where the same numbers were in the same position were eliminated. Neat trick, eh?
 
-This taught me two new methods. The <code>#zip</code> method of arrays merges two arrays into one, keeping both elements in each position:
+This taught me two new methods. The <code>#zip</code> method merges two arrays into one, keeping both elements in each position:
 
 {% highlight ruby %}
 array_one = [ 2, 4, 6, 8, 10, 12 ]
@@ -107,4 +109,4 @@ array.transpose
 
 {% endhighlight %}
 
-And that leaves me with a neat little method that works as a smooth little operator to remove like elements in two arrays.
+And that leaves me with a neat little method that works as a smooth operator to remove like elements in two arrays.
