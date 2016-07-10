@@ -8,7 +8,8 @@ date:   2016-07-10
 
 [ (1)red (2)yellow (3)blue   (4)blue   (5)red (6)yellow ]<br>
 
- and the player's guess was:<br>
+and the player's guess was:<br>
+<br>
 [ (1)red (2)blue   (3)yellow (4)yellow (5)red (6)yellow ]<br>
 
 This means that positions 1, 5, and 6 are exactly correct. Meanwhile, in the player's guess, peg 2 should be in position 3, and 3 should be in 2. Finally, position 4 is completely wrong. To sum up, we have 3 correct and 2 misplaced pegs.
@@ -28,7 +29,7 @@ def count_correct(move)
 To count the misplaced pegs, I ended up creating a solution that iterated through the guess and altered the solution array so pegs would not be counted more than once. I ended up with this:
 
 {% highlight ruby %}
-def count_misplaced(move)
+def count_misplaced(move, solution)
   # duplicate the arrays, so we don't change the originals
   move = move.dup
   solution = solution.dup
