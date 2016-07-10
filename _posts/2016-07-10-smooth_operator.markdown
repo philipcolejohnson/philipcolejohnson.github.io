@@ -6,10 +6,10 @@ date:   2016-07-10
 
 <p class="intro"><span class="dropcap">W</span>hile working on implementing a Mastermind game this week, I discovered I basically needed a new array operator. The trouble began when I ran into the issue of determining the number of correct and misplaced pegs in a player's guess. For example, let's say the secret code is:</p>
 
-[ (1)red (2)yellow (3)blue   (4)blue   (5)red (6)yellow ]
+[ (1)red (2)yellow (3)blue   (4)blue   (5)red (6)yellow ]<br>
 
- and the player's guess was:
-[ (1)red (2)blue   (3)yellow (4)yellow (5)red (6)yellow ]
+ and the player's guess was:<br>
+[ (1)red (2)blue   (3)yellow (4)yellow (5)red (6)yellow ]<br>
 
 This means that positions 1, 5, and 6 are exactly correct. Meanwhile, in the player's guess, peg 2 should be in position 3, and 3 should be in 2. Finally, position 4 is completely wrong. To sum up, we have 3 correct and 2 misplaced pegs.
 
@@ -19,7 +19,7 @@ It was easy to check for the number of correct pegs:
 def count_correct(move)
     count = 0
     move.each_index do |index|
-      count += 1 if move[index] == @solution[index]
+      count += 1 if move[index] == solution[index]
     end
     count
   end
@@ -31,12 +31,14 @@ To count the misplaced pegs, I ended up creating a solution that iterated throug
 def count_misplaced(move)
   # duplicate the arrays, so we don't change the originals
   move = move.dup
-  solution = @solution.dup
+  solution = solution.dup
 
+  # elimate guesses that were correct
   move.length.times do |count|
     solution[count] = nil if move[count] == solution[count]
   end
   
+  # count guesses that were in the wrong spot
   count = 0
   move.each do |element|
     solution.each_index do |index|
@@ -53,11 +55,11 @@ end
 
 It works, but I thought there must be a more elegant solution. My first idea was to somehow use array operators as a sly way of accomplishing basically what I had already implemented. Eventually, I came up with an algorithm that might solve the problem. My idea was to take the two arrays and eliminate the guesses that were exactly correct. From our example above, that would leave us with:
 
-Solution array:
-[ (2)yellow (3)blue   (4)blue ]
+Solution array:<br>
+[ (2)yellow (3)blue   (4)blue ]<br>
 
-Guess array:
-[ (2)blue   (3)yellow (4)yellow ]
+Guess array:<br>
+[ (2)blue   (3)yellow (4)yellow ]<br>
 
 When I tried to implement procedure, it turned out to be harder than I anticipated to do well. I worked with one of our instructors on the problem, and we eventually came up with this:
 
