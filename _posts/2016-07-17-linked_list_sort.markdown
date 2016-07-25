@@ -6,7 +6,7 @@ date:   2016-07-17
 
 <p class="intro"><span class="dropcap">L</span>inked lists can sometimes be a better fit than an array for an application's data structure. However, sorting a linked list in Ruby is not as straight-forward as sorting an array, as there are no built-in methods.</p>
 
-A useful exercise is to write a method that sorts a list of integers. As preparation for the problem, I first constructed a linked list of unsorted integers, along with a method to print them.
+A useful exercise is to write a method that sorts a list of integers. As preparation for the problem, I first constructed a linked list of unsorted integers.
 
 {% highlight ruby %}
 Node = Struct.new(:data, :next)
@@ -16,16 +16,6 @@ current_node = list
 [5, 10, 3, 5, 7, 8, 5, 10, 1].each do |num|
   current_node.next = Node.new(num, nil)
   current_node = current_node.next
-end
-
-def print_list(list)
-  print "#{list.data}"
-  current_node = list.next
-  until current_node.nil?
-    print " -> #{current_node.data}"
-    current_node = current_node.next
-  end
-  puts
 end
 
 # 6 -> 5 -> 10 -> 3 -> 5 -> 7 -> 8 -> 5 -> 10 -> 1
@@ -49,7 +39,9 @@ However, if we were to write our own, we might use an efficient method like a Me
 
 The final process is to traverse our sorted array and build a new linked list. This, of course, will take *n* steps. That leaves us with O(2n + (n log n)). If we divide out the *n*, we get O(n(2 + log n)), which is basically O(n log n), the Big O of the sort. This is the best we can hope for, since the sort can't get any faster.
 
-The question is, do we need a sort? There's a trick we can use to reach O(n). Instead of trying to sort the data, I traversed the list once and kept track in a hash of the number of times each integer was used. I also kept track of the maximum and minimum of the set so that I could use it in the next step.
+The question is, do we need a sort? There's a trick we can use to reach O(n), though only under certain conditions, which is a list of limited range and a finite set of values (e.g. integers or letters). This might occur in real life when sorting, for example, a list of users' ages.
+
+Instead of trying to sort the data, I traversed the list once and kept track in a hash of the number of times each integer was used. I also kept track of the maximum and minimum of the set so that I could use it in the next step.
 
 {% highlight ruby %}
 def sort_list(list)
@@ -87,7 +79,7 @@ def sort_list(list)
 end
 {% endhighlight %}
 
-This process runs longer than *n* times since I am iterating through numbers that I don't use, and depending on the range could theoretically take quite a while if the list contained few elements with a wide range, e.g. a list like <code>0 -> 1 -> 100_000_000</code>. However, if we knew our numbers would have a much narrower range (less than, say, n log n), this method would be faster, because the rebuilding of list would take give us an O(n + max - min), which, ignoring the constants, means the method is O(n), linear time.
+This process runs longer than *n* times since I am iterating through numbers that I don't use. Of course, as I mentioned, this only works on lists of a finite set (it wouldn't work on floats, for instance), and also of limited range. With an unknown range, the Big O would be infinity (or at least the maximum value of integers) since the list could have a huge range, e.g. a list like <code>0 -> 1 -> 100_000_000_000_000</code>. However, in certain circumstances in which we knew our numbers would have a much narrower range (less than, say, n log n), this method would be faster, because the rebuilding of list would take give us an O(n + max - min), which, ignoring the constants, means the method is O(n), linear time.
 
 So, we're now left with a method that could potentially be much faster than using a sorting method. Perhaps the next step in improving the method would be to determine by the range which method is more appropriate.
 
