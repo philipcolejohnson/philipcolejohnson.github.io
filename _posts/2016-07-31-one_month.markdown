@@ -4,10 +4,10 @@ title:  Reflections On An Online Coding Bootcamp After One Month
 date:   2016-07-31
 ---
 
-<p class="intro"><span class="dropcap">I</span>t's official! I've now completed one month of the coding bootcamp at <a href='http://www.vikingcodeschool.com>Viking Code School</a>! I felt it was the perfect time for a little reflection.</p>
+<p class="intro"><span class="dropcap">I</span>t's official! I've now completed one month of the coding bootcamp at <a href='http://www.vikingcodeschool.com'>Viking Code School</a>! I felt it was the perfect time for a little reflection.</p>
 
 #What We've Done So Far
-It's been quite a month, and looking back now at where I was at the beginning (was that just four weeks ago?!) and how much I've learned since sets the head spinning. We've covered object-oriented programming, test-driven development with Rspec, recursion, file I/O, data structures, searching and sorting algorithms, web scraping, APIs, basic webapps in Sinatra, REST and MVC architecture in Ruby on Rails, and, finally, we're just getting started in SQL and databases.
+It's been quite a month, and looking back now at where I was at the beginning (was that just four weeks ago?!) and how much I've learned since sets the head spinning. We've covered object-oriented programming, test-driven development with Rspec, recursion, file I/O, data structures, searching and sorting algorithms, web scraping, APIs, basic web apps in Sinatra, REST and MVC architecture in Ruby on Rails, and, finally, we're just getting started in SQL and databases.
 
 Just to be clear, we had a foundation before jumping in—the prep work was intense. Before even applying I spent a month completing the free prep work curriculum, and then spent several more weeks finishing all the pre-work. As a result of this early exposure, I felt ready when the class finally began, and I'm thankful the class was set up this way.
 
