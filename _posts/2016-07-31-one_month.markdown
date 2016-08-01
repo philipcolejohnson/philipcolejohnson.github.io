@@ -4,14 +4,16 @@ title:  Reflections On An Online Coding Bootcamp After One Month
 date:   2016-07-31
 ---
 
-<p class="intro"><span class="dropcap">I</span>t's official! I've now completed one month of the coding bootcamp at <a href='http://www.vikingcodeschool.com'>Viking Code School</a>! I felt it was the perfect time for a little reflection.</p>
+<p class="intro"><span class="dropcap">I</span>t's official. I've now completed one month of the coding bootcamp at <a href='http://www.vikingcodeschool.com'>Viking Code School</a>! I felt it was the perfect time for a little reflection.</p>
 
-#What We've Done So Far
+##What We've Done So Far
+
 It's been quite a month, and looking back now at where I was at the beginning (was that just four weeks ago?!) and how much I've learned since sets the head spinning. We've covered object-oriented programming, test-driven development with Rspec, recursion, file I/O, data structures, searching and sorting algorithms, web scraping, APIs, basic web apps in Sinatra, REST and MVC architecture in Ruby on Rails, and, finally, we're just getting started in SQL and databases.
 
 Just to be clear, we had a foundation before jumping in—the prep work was intense. Before even applying I spent a month completing the free prep work curriculum, and then spent several more weeks finishing all the pre-work. As a result of this early exposure, I felt ready when the class finally began, and I'm thankful the class was set up this way.
 
-#What's It Like Taking an Online Camp
+##What's It Like Taking an Online Camp
+
 I'll admit that I was a little nervous about taking a class online rather than in person. I've had experience with online classes before, and what I'd mostly found was that it was hard to stay motivated; perhaps just the remoteness of online connection wasn't enough to make a course feel 'real.' I'd also found it was easy to procrastinate and fall behind. Finally, the whole affair felt disconnected—I felt like I might as well just be doing my homework and emailing it into the void.
 
 But this camp has totally changed my opinion of what online courses could be. One part that really helps—and that they require—is the use of video. Something about seeing our classmates every morning makes it actually feel like I'm actually in a classroom and we're all serious about learning. I feel the (helpful) peer pressure of having classmates; once or twice I've realized (too late) that I hadn't brushed up on a topic enough and as a result am embarrassed in front of my peers. I never thought I'd experience this online!
@@ -20,7 +22,7 @@ I also love pair programming, and it works seamlessly online. I went into the co
 
 Not everything is perfect of course. One challenge of working online is that it's really hard to do anything freehand. There's been a time or two when I just wish I could write on a whiteboard or a piece of paper. It would be nice, too, if I could actually meet my classmates in person outside of class. As soon as we log off at the end of the day, we're back in our own home again. That's sometimes a blessing, but not always.
 
-#Tips I've Learned About Taking an Online Class
+##Tips I've Learned About Taking an Online Class
 
 To end this, I thought I'd provide a little useful insight I've learned the hard way.
 
