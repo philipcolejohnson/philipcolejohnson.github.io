@@ -1,0 +1,32 @@
+---
+layout: post
+title:  Reflections On An Online Coding Bootcamp After One Month
+date:   2016-07-31
+---
+
+<p class="intro"><span class="dropcap">I</span>t's official! I've now completed one month of the coding bootcamp at <a href='http://www.vikingcodeschool.com>Viking Code School</a>! I felt it was the perfect time for a little reflection.</p>
+
+#What We've Done So Far
+It's been quite a month, and looking back now at where I was at the beginning (was that just four weeks ago?!) and how much I've learned since sets the head spinning. We've covered object-oriented programming, test-driven development with Rspec, recursion, file I/O, data structures, searching and sorting algorithms, web scraping, APIs, basic webapps in Sinatra, REST and MVC architecture in Ruby on Rails, and, finally, we're just getting started in SQL and databases.
+
+Just to be clear, we had a foundation before jumping in—the prep work was intense. Before even applying I spent a month completing the free prep work curriculum, and then spent several more weeks finishing all the pre-work. As a result of this early exposure, I felt ready when the class finally began, and I'm thankful the class was set up this way.
+
+#What's It Like Taking an Online Camp
+I'll admit that I was a little nervous about taking a class online rather than in person. I've had experience with online classes before, and what I'd mostly found was that it was hard to stay motivated; perhaps just the remoteness of online connection wasn't enough to make a course feel 'real.' I'd also found it was easy to procrastinate and fall behind. Finally, the whole affair felt disconnected—I felt like I might as well just be doing my homework and emailing it into the void.
+
+But this camp has totally changed my opinion of what online courses could be. One part that really helps—and that they require—is the use of video. Something about seeing our classmates every morning makes it actually feel like I'm actually in a classroom and we're all serious about learning. I feel the (helpful) peer pressure of having classmates; once or twice I've realized (too late) that I hadn't brushed up on a topic enough and as a result am embarrassed in front of my peers. I never thought I'd experience this online!
+
+I also love pair programming, and it works seamlessly online. I went into the course a little worried because I'd never coded with anyone else before and wasn't sure I'd enjoy the experience. In fact, the opposite happened: I absolutely loved it. I learn something new everyday from my classmates, and it's satisfying working through challenges together. We share screens to pull it off, and aside from the occaisional internet service lapses, it feels like we're in the same room together. I actually felt a bit lonely when we had a day working alone.
+
+Not everything is perfect of course. One challenge of working online is that it's really hard to do anything freehand. There's been a time or two when I just wish I could write on a whiteboard or a piece of paper. It would be nice, too, if I could actually meet my classmates in person outside of class. As soon as we log off at the end of the day, we're back in our own home again. That's sometimes a blessing, but not always.
+
+#Tips I've Learned About Taking an Online Class
+
+To end this, I thought I'd provide a little useful insight I've learned the hard way.
+
+* *Get enough sleep.* The first week I was staying up late every night trying to finish absolutely everything. By the end of the week I was a zombie, and worse, I couldn't absorb everything I wanted to. I soon realized that I could let a few things wait for the weekend, or even for after I complete the camp. I make sure I get enough sleep now, and it's done wonders.
+* *Go outside.* This is similar to the sleep advice. Erik (the founder of the school) mentioned self-care several times, but of course I didn't listen well enough. We're sitting in a chair all day. Now I take break times and walk around and get a little fresh air.
+* *Wake up early.* This isn't always easy. But I've been waking up at 6am instead of 7:45, just before class starts. I go to the gym, and then have plenty of time to relax/review. By the time class starts, my brain is fully alert and prepared.
+* *Look at example code.* I'm not sure why, but at first I was completing my assignments, and then, because I'd solved them, never bothered to really look through the solutions. This is a mistake. You can learn a lot from looking at code from a more experienced developer.
+* *Read ahead.* I tend to read only the parts I've been assigned. However, I noticed if I kept going, looking ahdead usually led me to understand better what I was currently working on. It led to a fuller understanding of what I was doing. Also, reading ahead meant I would read things twice, and would therefore know it better.
+* *Take notes.* Everything in our course is there online, easy to find. Yet there's something very helpful about writing and organizing information for yourself. It's also much easier to look back when you have notes in front of you.
