@@ -5,6 +5,17 @@ date:   2016-07-24
 ---
 
 <p class="intro"><span class="dropcap">M</span>y task today is to find the longest possible palindrome able to be constructed from a list of characters.</p>
+
+Here is the problem I saw posed:
+
+*Given a string, return the longest palindrome that can be constructed by removing or shuffling characters.*<br>
+Examples:<br>
+'aha' -> 'aha'<br>
+'ttaatta' -> 'ttaaatt'<br>
+'abc' -> 'a' OR 'b' OR 'c'<br>
+'gggaaa' -> 'gaaag' OR 'aggga'<br>
+
+
 I began with brainstorming a solution. After a little thought, I had a first approach.
 
 1. Sort the characters so that they are grouped together.
