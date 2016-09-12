@@ -41,7 +41,7 @@ end
 
 The nice thing about this approach is that the strategy is easy to follow. We loop through every element of the array, and for each we sum the elements that follow it, looking for our target sum. We return false at the end if we didn't find anything earlier.
 
-However, let's look at the O(n). In the worst case scenario, we have to loop through every element of our array. For each of those, we have to (at worst) loop through all the remaining elements. Since there is one fewer argument each time, that means we take our n times through the outside loop and multiply it by *(n - 1) x (n - 2) x (n - 3) ...*, which means we have O(n^2).
+However, let's look at the O(n). In the worst case scenario, we have to loop through every element of our array. For each of those, we have to (at worst) loop through all the remaining elements. Since there is one fewer argument each time, that means we take our n times through the outside loop and multiply it by *(n - 1) + (n - 2) + (n - 3) ...*, which means we have O(n^2).
 
 ### A Better Solution
 

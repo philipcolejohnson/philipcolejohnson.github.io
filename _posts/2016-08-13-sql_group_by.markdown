@@ -106,10 +106,10 @@ GROUP BY 'Decade'
 
 <img src="{{ '/assets/img/SQL_6.png' | prepend: site.baseurl }}" alt="GROUP BY Decade">
 
-Cool, huh?
+Neat, huh?
 
 ## In Conclusion
 
 That's it! Once you understand GROUP BY, you can use it confidently in more complicated queries that involve joining multiple tables and/or pulling out sub-queries, and you won't feel you're out of your element.
 
-Or at least that's, you know, my opinion, man.
+Or at least that's just, you know, my opinion, man.
