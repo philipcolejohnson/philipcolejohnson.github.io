@@ -13,23 +13,23 @@
 }
 
 .ski-down {
-  background-image: url("/skidown.png");
+  background-image: url("skidown.png");
 }
 
 .ski-left {
-  background-image: url("/skileft.png");
+  background-image: url("skileft.png");
 }
 
 .ski-right {
-  background-image: url("/skiright.png");
+  background-image: url("skiright.png");
 }
 
 .ski-downleft {
-  background-image: url("/skidownleft.png");
+  background-image: url("skidownleft.png");
 }
 
 .ski-downright {
-  background-image: url("/skidownright.png");
+  background-image: url("skidownright.png");
 }
 
 
