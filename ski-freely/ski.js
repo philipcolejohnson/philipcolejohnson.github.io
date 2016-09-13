@@ -131,7 +131,7 @@ var game = {
   slideBoard: function (rows) {
     for (var i = 0; i < rows; i++) {
       game.board.splice(0, 1);
-      if (game.occupied(skier.pos) && skier.height < 2) {
+      if (game.occupied([skier.pos[X], skier.pos[Y] - skier.height]) && skier.height < 1) {
         game.over();
         return false;
       }
@@ -143,10 +143,10 @@ var game = {
         row.push(0);
       }
       game.board.push(row);
-    }
-      
-    for (var i; i < DENSITY; i++) {
-      game.addObstacle();
+
+      for (var k = 0; k < DENSITY; k++) {
+        game.addObstacle();
+      }
     }
   },
 
@@ -161,9 +161,8 @@ var game = {
   addObstacle: function(posY) {
     var x = Math.floor(Math.random() * BOARD_WIDTH);
     var y = posY || game.board.length - 1;
-
+    console.log(y)
     game.board[y][x] = Math.floor(Math.random() * 3) + 1;
-    // game.obstacles.push( new Obstacle([x, y], Math.floor(Math.random() * 3)) );
   },
 
   deleteObstacle: function(index) {
@@ -189,11 +188,10 @@ var game = {
 
   tick: function (key) {
     skier.move();
-    console.log(game.board.length)
     // hit something?
-    if ( game.occupied(skier.pos) ) {
-      game.over();
-    }
+    // if ( game.occupied(skier.pos) ) {
+    //   game.over();
+    // }
 
     if (skier.height > 0) {
       skier.height--;
