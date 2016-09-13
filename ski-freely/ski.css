@@ -10,6 +10,7 @@
 #skier {
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 99;
 }
 
 .ski-down {
@@ -36,8 +37,8 @@
 
  /* 25 px */
 .box {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   /*border: 1px solid black;*/
   display: inline-block;
   box-sizing: border-box;
@@ -45,7 +46,7 @@
 }
 .row {
   margin: 0;
-  height: 30px;
+  height: 20px;
 }
 
 .tree {

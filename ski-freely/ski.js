@@ -90,13 +90,13 @@ var skier = {
     }
 
     if (skier.direction !== newDirection) {
-      skier.direction = newDirection;]
+      skier.direction = newDirection;
     }
   },
 
   changeImage: function(direction) {
     var skierDOM = $('#skier');
-    
+
     switch(direction) {
       case 4:
         skierDOM.addClass("ski-left");
@@ -257,9 +257,7 @@ var view = {
       }
 
       $board.append($row);
-      if (skier.pos[Y] - skier.height === y + 3) {
-        skier.changeImage(skier.direction);
-      }
+      skier.changeImage(skier.direction);
     }
   }
 };
