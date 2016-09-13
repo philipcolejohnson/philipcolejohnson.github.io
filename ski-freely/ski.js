@@ -1,5 +1,5 @@
 GRID_WIDTH = 31;
-GRID_HEIGHT = 33;
+GRID_HEIGHT = 25;
 
 BOARD_HEIGHT = 300;
 BOARD_WIDTH = 300;
@@ -26,6 +26,7 @@ var skier = {
     skier.down = false;
     skier.speeding = false;
     skier.height = 0;
+    skier.direction = 2;
   },
 
   move: function() {
@@ -53,38 +54,73 @@ var skier = {
     skier.down = true;
     skier.speeding = false;
 
+    
+    var newDirection;
+
+    if (pos[X] < skierX - LEEWAY && pos[Y] > skierY) {
+      // Lower left
+      skier.left = true;
+      // skierDOM.addClass("ski-downleft");
+      newDirection = 1;
+      // console.log("Lower left")
+    } else if (pos[X] > skierX + LEEWAY && pos[Y] > skierY) {
+      // lower right
+      skier.right = true;
+      // skierDOM.addClass("ski-downright");
+      newDirection = 3;
+      // console.log("lower right")
+    } else if (pos[X] < skierX && pos[Y] <= skierY) {
+      // upper left
+      skier.down = false;
+      // skierDOM.addClass("ski-left");
+      newDirection = 4;
+      // console.log("upper left")
+    } else if (pos[X] > skierX && pos[Y] <= skierY) {
+      // upper right
+      skier.down = false;
+      // skierDOM.addClass("ski-right");
+      newDirection = 6;
+      // console.log("upper right")
+    } else if (pos[X] > skierX - LEEWAY && pos[X] < skierX + LEEWAY && pos[Y] >skierY) {
+      // straight down
+      skier.speeding = true;
+      // skierDOM.addClass("ski-down");
+      newDirection = 2;
+      // console.log("straight down")
+    }
+
+    if (skier.direction !== newDirection) {
+      skier.direction = newDirection;
+      skier.changeImage(newDirection);
+    }
+  },
+
+  changeImage: function(direction) {
     var skierDOM = $('#skier');
+    // skierDOM[0].className = "";
+
     skierDOM.removeClass("ski-down");
     skierDOM.removeClass("ski-left");
     skierDOM.removeClass("ski-right");
     skierDOM.removeClass("ski-downleft");
     skierDOM.removeClass("ski-downright");
-
-    if (pos[X] < skierX - LEEWAY && pos[Y] > skierY) {
-      // Lower left
-      skier.left = true;
-      skierDOM.addClass("ski-downleft");
-      // console.log("Lower left")
-    } else if (pos[X] > skierX + LEEWAY && pos[Y] > skierY) {
-      // lower right
-      skier.right = true;
-      skierDOM.addClass("ski-downright");
-      // console.log("lower right")
-    } else if (pos[X] < skierX && pos[Y] <= skierY) {
-      // upper left
-      skier.down = false;
-      skierDOM.addClass("ski-left");
-      // console.log("upper left")
-    } else if (pos[X] > skierX && pos[Y] <= skierY) {
-      // upper right
-      skier.down = false;
-      skierDOM.addClass("ski-right");
-      // console.log("upper right")
-    } else if (pos[X] > skierX - LEEWAY && pos[X] < skierX + LEEWAY && pos[Y] >skierY) {
-      // straight down
-      skier.speeding = true;
-      skierDOM.addClass("ski-down");
-      // console.log("straight down")
+    console.log(direction)
+    switch(direction) {
+      case 4:
+        skierDOM.addClass("ski-left");
+        break;
+      case 6:
+        skierDOM.addClass("ski-right");
+        break;
+      case 1:
+        skierDOM.addClass("ski-downleft");
+        break;
+      case 2:
+        skierDOM.addClass("ski-down");
+        break;
+      case 3:
+        skierDOM.addClass("ski-downright");
+        break;
     }
   }
 };
@@ -229,6 +265,7 @@ var view = {
       }
 
       $board.append($row);
+      skier.changeImage(skier.direction);
     }
   }
 };
