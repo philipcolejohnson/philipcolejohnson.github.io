@@ -1,0 +1,61 @@
+/*  SKI FREE  */
+
+#ski-home {
+  /*border: solid 1px black;*/
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#skier {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ski-down {
+  background-image: url("/skidown.png");
+}
+
+.ski-left {
+  background-image: url("/skileft.png");
+}
+
+.ski-right {
+  background-image: url("/skiright.png");
+}
+
+.ski-downleft {
+  background-image: url("/skidownleft.png");
+}
+
+.ski-downright {
+  background-image: url("/skidownright.png");
+}
+
+
+
+ /* 25 px */
+.box {
+  height: 30px;
+  width: 30px;
+  /*border: 1px solid black;*/
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.row {
+  margin: 0;
+  height: 30px;
+}
+
+.tree {
+  background-color: brown;
+}
+
+.rock {
+  background-color: gray;
+}
+
+.snow {
+  border: 1px solid black;
+}
