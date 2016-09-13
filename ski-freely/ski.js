@@ -57,31 +57,31 @@ var skier = {
     
     var newDirection;
 
-    if (pos[X] < skierX - LEEWAY && pos[Y] > skierY) {
+    if (pos[X] <= skierX - LEEWAY && pos[Y] >= skierY) {
       // Lower left
       skier.left = true;
       // skierDOM.addClass("ski-downleft");
       newDirection = 1;
       // console.log("Lower left")
-    } else if (pos[X] > skierX + LEEWAY && pos[Y] > skierY) {
+    } else if (pos[X] >= skierX + LEEWAY && pos[Y] >= skierY) {
       // lower right
       skier.right = true;
       // skierDOM.addClass("ski-downright");
       newDirection = 3;
       // console.log("lower right")
-    } else if (pos[X] < skierX && pos[Y] <= skierY) {
+    } else if (pos[X] <= skierX && pos[Y] <= skierY) {
       // upper left
       skier.down = false;
       // skierDOM.addClass("ski-left");
       newDirection = 4;
       // console.log("upper left")
-    } else if (pos[X] > skierX && pos[Y] <= skierY) {
+    } else if (pos[X] >= skierX && pos[Y] <= skierY) {
       // upper right
       skier.down = false;
       // skierDOM.addClass("ski-right");
       newDirection = 6;
       // console.log("upper right")
-    } else if (pos[X] > skierX - LEEWAY && pos[X] < skierX + LEEWAY && pos[Y] >skierY) {
+    } else  {
       // straight down
       skier.speeding = true;
       // skierDOM.addClass("ski-down");
@@ -90,21 +90,13 @@ var skier = {
     }
 
     if (skier.direction !== newDirection) {
-      skier.direction = newDirection;
-      skier.changeImage(newDirection);
+      skier.direction = newDirection;]
     }
   },
 
   changeImage: function(direction) {
     var skierDOM = $('#skier');
-    // skierDOM[0].className = "";
-
-    skierDOM.removeClass("ski-down");
-    skierDOM.removeClass("ski-left");
-    skierDOM.removeClass("ski-right");
-    skierDOM.removeClass("ski-downleft");
-    skierDOM.removeClass("ski-downright");
-    console.log(direction)
+    
     switch(direction) {
       case 4:
         skierDOM.addClass("ski-left");
@@ -265,7 +257,9 @@ var view = {
       }
 
       $board.append($row);
-      skier.changeImage(skier.direction);
+      if (skier.pos[Y] - skier.height === y + 3) {
+        skier.changeImage(skier.direction);
+      }
     }
   }
 };
