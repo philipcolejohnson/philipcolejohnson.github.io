@@ -57,7 +57,10 @@ var skier = {
     
     var newDirection;
 
-    if (pos[X] <= skierX - LEEWAY && pos[Y] >= skierY) {
+    if (skier.height > 0) {
+      skier.down = true;
+      newDirection = 2;
+    } else if (pos[X] <= skierX - LEEWAY && pos[Y] >= skierY) {
       // Lower left
       skier.left = true;
       // skierDOM.addClass("ski-downleft");
@@ -96,6 +99,10 @@ var skier = {
 
   changeImage: function(direction) {
     var skierDOM = $('#skier');
+
+    if (skier.height > 0) {
+      skierDOM.addClass("ski-jump");
+    }
 
     switch(direction) {
       case 4:
@@ -161,7 +168,7 @@ var game = {
   addObstacle: function(posY) {
     var x = Math.floor(Math.random() * BOARD_WIDTH);
     var y = posY || game.board.length - 1;
-    console.log(y)
+
     game.board[y][x] = Math.floor(Math.random() * 3) + 1;
   },
 
@@ -188,10 +195,6 @@ var game = {
 
   tick: function (key) {
     skier.move();
-    // hit something?
-    // if ( game.occupied(skier.pos) ) {
-    //   game.over();
-    // }
 
     if (skier.height > 0) {
       skier.height--;
@@ -204,7 +207,10 @@ var game = {
     clearInterval(game.loop);
     $('#ski-home').off("mousemove");
     $('#ski-home').off("click");
+    view.render();
     $('#ski-home').after('<h1>GAME OVER!</h1>');
+    
+    $('#skier').addClass('ski-fall');
   }
 };
 
