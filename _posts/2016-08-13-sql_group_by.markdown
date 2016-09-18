@@ -8,7 +8,7 @@ date:   2016-08-13
 
 But one shouldn't just thoughtlessly toss syntax together for a GROUP BY statement and hope for the best. This isn't 'Nam. There are rules. Which I'm here to teach you.
 
-So without further ado, here's an abbreviated table of Coen brothers movies (chosen arbitrarily by how much I like them, with the addition of *The Lady Killers* because I felt I should include a bad one) to help us learn:
+So without further ado, here's an abbreviated table of good Coen brothers movies (and a bad one, to remind us that even talented people make mistakes) to help us learn:
 
 <img src="{{ '/assets/img/SQL_1.png' | prepend: site.baseurl }}" alt="Example Data">
 

@@ -233,12 +233,20 @@ CONTACT PAGE STYLING
 }
 
 /***************
-ABOUT PAGE STYLING
+PRJOECT PAGE STYLING
 ***************/
 
-.aboutRow {
-
+.projectLeft {
+	@include span(6 of 12);
 }
+
+.projectRight {
+	@include span(6 of 12 last);
+}
+
+/***************
+ABOUT PAGE STYLING
+***************/
 
 .aboutLeft {
 	@include span(6 of 12);
