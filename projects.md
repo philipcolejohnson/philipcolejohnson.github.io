@@ -40,5 +40,29 @@ title: Philip Cole Johnson's Projects
       </ul>
     </div>
   </div>
+
+  <hr><br>
+
+  <div>
+    <div>
+      <a href="https://cdn.rawgit.com/philipcolejohnson/project_tetris_js/master/index.html"><img src="{{ '/assets/img/tetris.png' | prepend: site.baseurl }}" alt="Tetris"></a>
+    </div>
+    <div >
+      <a href="https://cdn.rawgit.com/philipcolejohnson/project_tetris_js/master/index.html"><h3>Tetris</h3></a>
+      <p>A JavaScript Tetris game [<a href="https://github.com/philipcolejohnson/project_tetris_js">Github Repo</a>]</p>
+    </div>
+  </div>
+
+  <hr><br>
+
+  <div>
+    <div>
+      <a href="https://cdn.rawgit.com/philipcolejohnson/project_game_center_browser/master/ski.html"><img src="{{ '/assets/img/skifree.png' | prepend: site.baseurl }}" alt="SkiFree"></a>
+    </div>
+    <div >
+      <a href="https://cdn.rawgit.com/philipcolejohnson/project_game_center_browser/master/ski.html"><h3>SkiFree</h3></a>
+      <p>A JavaScript SkiFree game [<a href="https://github.com/philipcolejohnson/project_game_center_browser">Github Repo</a>]</p>
+    </div>
+  </div>
   
 </div>
