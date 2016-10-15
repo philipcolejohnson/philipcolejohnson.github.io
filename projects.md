@@ -8,17 +8,16 @@ title: Philip Cole Johnson's Projects
 
   <div>
     <div>
-      <a href="https://boiling-eyrie-10872.herokuapp.com/"><img src="{{ '/assets/img/betterhome.jpg' | prepend: site.baseurl }}" alt="BetterHome"></a>
+      <a href="/fideligard_spa"><img src="{{ '/assets/img/fideligard.jpg' | prepend: site.baseurl }}" alt="Fideligard"></a>
     </div>
     <div >
-      <a href="https://boiling-eyrie-10872.herokuapp.com/"><h3>BetterHome</h3></a>
-      <p>Discover the San Francisco neighborhood that best matches your needs. [<a href="https://github.com/philipcolejohnson/better_home">Github Repo</a>]</p>
+      <a href="/fideligard_spa"><h3>Fideligard</h3></a>
+      <p>A stock-trading simulator—with time travel! [<a href="https://github.com/philipcolejohnson/fideligard_spa">Github Repo</a>]</p>
       <ul>
-        <li>RESTful Ruby on Rails and PostgreSQL back-end</li>
-        <li>Integrates 7 REST APIs (Factual/Google Maps/Socrata/Trulia/Walkscore/Yelp/Zillow)</li>
-        <li>Full authentication suite using OmniAuth and Devise</li>
-        <li>Delayed jobs with dyno worker for email and scheduled API calls</li>
-        <li>Developed during a 2.5 day hackathon</li>
+        <li>Single page app entirely in AngularJS</li>
+        <li>Modular coding with services and directives</li>
+        <li>Routing using the ui-router module</li>
+        <li>Data from Yahoo Finance API</li>
       </ul>
     </div>
   </div>
@@ -45,10 +44,29 @@ title: Philip Cole Johnson's Projects
 
   <div>
     <div>
-      <a href="https://cdn.rawgit.com/philipcolejohnson/project_tetris_js/master/index.html"><img src="{{ '/assets/img/tetris.png' | prepend: site.baseurl }}" alt="Tetris"></a>
+      <a href="https://boiling-eyrie-10872.herokuapp.com/"><img src="{{ '/assets/img/betterhome.jpg' | prepend: site.baseurl }}" alt="BetterHome"></a>
     </div>
     <div >
-      <a href="https://cdn.rawgit.com/philipcolejohnson/project_tetris_js/master/index.html"><h3>Tetris</h3></a>
+      <a href="https://boiling-eyrie-10872.herokuapp.com/"><h3>BetterHome</h3></a>
+      <p>Discover the San Francisco neighborhood that best matches your needs. [<a href="https://github.com/philipcolejohnson/better_home">Github Repo</a>]</p>
+      <ul>
+        <li>RESTful Ruby on Rails and PostgreSQL back-end</li>
+        <li>Integrates 7 REST APIs (Factual/Google Maps/Socrata/Trulia/Walkscore/Yelp/Zillow)</li>
+        <li>Full authentication suite using OmniAuth and Devise</li>
+        <li>Delayed jobs with dyno worker for email and scheduled API calls</li>
+        <li>Developed during a 2.5 day hackathon</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr><br>
+
+  <div>
+    <div>
+      <a href="/tetris"><img src="{{ '/assets/img/tetris.png' | prepend: site.baseurl }}" alt="Tetris"></a>
+    </div>
+    <div >
+      <a href="/tetris"><h3>Tetris</h3></a>
       <p>A JavaScript Tetris game [<a href="https://github.com/philipcolejohnson/project_tetris_js">Github Repo</a>]</p>
     </div>
   </div>
@@ -57,11 +75,11 @@ title: Philip Cole Johnson's Projects
 
   <div>
     <div>
-      <a href="https://cdn.rawgit.com/philipcolejohnson/project_game_center_browser/master/ski.html"><img src="{{ '/assets/img/skifree.png' | prepend: site.baseurl }}" alt="SkiFree"></a>
+      <a href="http://philipj.me/project_game_center_browser/ski.html"><img src="{{ '/assets/img/skifree.png' | prepend: site.baseurl }}" alt="SkiFree"></a>
     </div>
     <div >
-      <a href="https://cdn.rawgit.com/philipcolejohnson/project_game_center_browser/master/ski.html"><h3>SkiFree</h3></a>
-      <p>A JavaScript SkiFree game [<a href="https://github.com/philipcolejohnson/project_game_center_browser">Github Repo</a>]</p>
+      <a href="http://philipj.me/project_game_center_browser/ski.html"><h3>SkiFree</h3></a>
+      <p>Finally free of yetis [<a href="https://github.com/philipcolejohnson/project_game_center_browser">Github Repo</a>]</p>
     </div>
   </div>
   
