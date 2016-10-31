@@ -79,7 +79,7 @@ title: Philip Cole Johnson's Projects
     </div>
     <div >
       <a href="http://philipj.me/project_game_center_browser/ski.html"><h3>SkiFree</h3></a>
-      <p>Finally free of yetis [<a href="https://github.com/philipcolejohnson/project_game_center_browser">Github Repo</a>]</p>
+      <p>Finally, no yetis [<a href="https://github.com/philipcolejohnson/project_game_center_browser">Github Repo</a>]</p>
     </div>
   </div>
   
