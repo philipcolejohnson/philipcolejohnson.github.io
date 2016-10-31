@@ -6,7 +6,7 @@ title: About Philip Cole Johnson
 <div class="post">
   <h1 class="pageTitle">About Me</h1>
   <img src="{{ '/assets/img/profile.jpg' | prepend: site.baseurl }}" alt="A pasture in Kyrgyzstan" width="30%" style="margin-left: 35%">
-    <p>I am an Orange County full stack developer.</p>
+    <p>I am an Orange County full stack developer with experience in Rails and AngularJS.</p>
 
     <p>I graduated from Michigan State University with a degree in English, determined to learn about the world before making my mark on it. After several years abroad serving in the Peace Corps in Kyrgyzstan and working in Seoul, Korea, I returned home to complete a Master's degree in fiction writing. Eager to apply everything I'd learned and tackle new challenges, I returned to a lifelong passion for coding that began in middle school when my uncle introduced me to Visual Basic. I joined <a href="http://www.vikingcodeschool.com">Viking Code School</a> and began a career in development.</p>
 
