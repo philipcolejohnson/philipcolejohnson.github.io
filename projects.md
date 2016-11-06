@@ -8,6 +8,24 @@ title: Philip Cole Johnson's Projects
 
   <div>
     <div>
+      <a href="http://thekithub.herokuapp.com/"><img src="{{ '/assets/img/kithub.gif' | prepend: site.baseurl }}" alt="KitHub"></a>
+    </div>
+    <div >
+      <a href="http://thekithub.herokuapp.com/"><h3>KitHub</h3></a>
+      <p>Platform for lesson plan collarboration, grading, and scheduling classes [<a href="https://github.com/philipcolejohnson/kithub">Github Repo</a>]</p>
+      <ul>
+        <li>Three Angular apps with a Rails backend</li>
+        <li>Version control algorithm for lesson plans</li>
+        <li>Uploading, downloading, and document conversion from docx to markdown</li>
+        <li>Live data visualizations using D3.js</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr><br>
+
+  <div>
+    <div>
       <a href="/fideligard_spa"><img src="{{ '/assets/img/fideligard.jpg' | prepend: site.baseurl }}" alt="Fideligard"></a>
     </div>
     <div >
@@ -32,10 +50,27 @@ title: Philip Cole Johnson's Projects
       <a href="https://nameless-falls-74566.herokuapp.com/"><h3>Danebook</h3></a>
       <p>A social media web app for seafaring Scandinavians. [<a href="https://github.com/philipcolejohnson/project_danebook">Github Repo</a>]</p>
       <ul>
-        <li>RESTful Ruby on Rails and PostgreSQL back-end</li>
+        <li>RESTful Ruby on Rails and PostgreSQL back-end with AJAX calls</li>
         <li>Database supports self, polymorphic, 1:1, 1:X associations</li>
         <li>Photo storage utilizing Amazon S3</li>
         <li>Model, controller, and feature testing using RSpec, factory girl and shoulda gems</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr><br>
+
+  <div>
+    <div>
+      <a href="http://phello.herokuapp.com"><img src="{{ '/assets/img/phello.png' | prepend: site.baseurl }}" alt="Phello"></a>
+    </div>
+    <div >
+      <a href="http://phello.herokuapp.com"><h3>Phello</h3></a>
+      <p>Refined task management [<a href="https://github.com/philipcolejohnson/phello">Github Repo</a>]</p>
+      <ul>
+        <li>Angular front end with Rails API</li>
+        <li>In place editing for text fields</li>
+        <li>Front end AJAX updates with no refresh</li>
       </ul>
     </div>
   </div>
