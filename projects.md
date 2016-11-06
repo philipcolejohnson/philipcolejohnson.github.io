@@ -12,7 +12,7 @@ title: Philip Cole Johnson's Projects
     </div>
     <div >
       <a href="http://thekithub.herokuapp.com/"><h3>KitHub</h3></a>
-      <p>Platform for lesson plan collarboration, grading, and scheduling classes [<a href="https://github.com/philipcolejohnson/kithub">Github Repo</a>]</p>
+      <p>Platform for lesson plan collaboration, grading, and scheduling classes [<a href="https://github.com/philipcolejohnson/kithub">Github Repo</a>]</p>
       <ul>
         <li>Three Angular apps with a Rails backend</li>
         <li>Version control algorithm for lesson plans</li>

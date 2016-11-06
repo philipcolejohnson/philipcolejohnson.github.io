@@ -12,5 +12,5 @@ title: About Philip Cole Johnson
 
     <p>Aside from coding, I love writing and reading, foreign languages, board games, wine, <a href="https://www.boardgamegeek.com/boardgame/128621/viticulture">board games about wine</a>, Central Asia, the ocean, international relations, Michigan State sports, and burritos.</p>
 
-    <p><a href="/resume.pdf">Resume</a></p>
+    <p><a href="/resume.pdf">resume</a></p>
 </div>
